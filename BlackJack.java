@@ -1,3 +1,8 @@
+// Cristopher Gomez
+// Abraham Gonzalez 
+// Anthony Madrigal-Murillo
+//1/21/25
+//asigment to update blackJack
 import java.util.Random;
 import java.util.Scanner;
 
@@ -26,6 +31,8 @@ public class BlackJack {
         playerTotal = playerTurn(scanner, playerTotal); //players turn 
         if (playerTotal > 21) {
             System.out.println("You busted! Dealer wins."); // if the player has a value higher than 21 prints out "you loose"
+            playerbalance -= playerBet;                                     //ADDED FOR BETTING
+            System.out.println("Remaining Balance: " + playerbalance + "!"); //ADDED FOR BETTING
             return;
         }
 
